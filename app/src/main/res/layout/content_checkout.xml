@@ -11,7 +11,7 @@
     tools:context="com.ellekay.lucie.fashionhouse.Checkout">
 
     <com.alexzh.circleimageview.CircleImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewShoes"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:clickable="true"
@@ -20,13 +20,77 @@
         app:view_shadowRadius="4dp"
         app:view_shadowDx="2dp"
         app:view_shadowDy="0dp"
-
         app:view_borderWidth="1dp"
         app:view_selectedColor="#C9C9C9"
         app:view_borderColor="#C9C9C9"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.alexzh.circleimageview.CircleImageView
+        android:id="@+id/imageViewBag"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:src="@drawable/bag"
+        app:view_backgroundColor="@color/colorPrimary"
+        app:view_shadowRadius="4dp"
+        app:view_shadowDx="2dp"
+        app:view_shadowDy="0dp"
+        app:view_borderWidth="1dp"
+        app:view_selectedColor="#C9C9C9"
+        app:view_borderColor="#C9C9C9"
+        android:layout_below="@+id/imageViewJewellery"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="26dp" />
+        android:layout_marginTop="37dp" />
+    <com.alexzh.circleimageview.CircleImageView
+        android:id="@+id/imageViewDress"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:src="@drawable/dresses"
+        app:view_backgroundColor="@color/colorPrimary"
+        app:view_shadowRadius="4dp"
+        app:view_shadowDx="2dp"
+        app:view_shadowDy="0dp"
+        app:view_borderWidth="1dp"
+        app:view_selectedColor="#C9C9C9"
+        app:view_borderColor="#C9C9C9"
+        android:layout_alignTop="@+id/imageViewJewellery"
+        android:layout_alignLeft="@+id/imageViewMakeup"
+        android:layout_alignStart="@+id/imageViewMakeup" />
+    <com.alexzh.circleimageview.CircleImageView
+        android:id="@+id/imageViewMakeup"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:src="@drawable/makeup"
+        app:view_backgroundColor="@color/colorPrimary"
+        app:view_shadowRadius="4dp"
+        app:view_shadowDx="2dp"
+        app:view_shadowDy="0dp"
+        app:view_borderWidth="1dp"
+        app:view_selectedColor="#C9C9C9"
+        app:view_borderColor="#C9C9C9"
+        android:layout_alignTop="@+id/imageViewShoes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <com.alexzh.circleimageview.CircleImageView
+        android:id="@+id/imageViewJewellery"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:src="@drawable/gold"
+        app:view_backgroundColor="@color/colorPrimary"
+        app:view_shadowRadius="4dp"
+        app:view_shadowDx="2dp"
+        app:view_shadowDy="0dp"
+        app:view_borderWidth="1dp"
+        app:view_selectedColor="#C9C9C9"
+        app:view_borderColor="#C9C9C9"
+        android:layout_below="@+id/imageViewShoes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
 
 </RelativeLayout>
