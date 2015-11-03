@@ -10,4 +10,5 @@
     tools:showIn="@layout/activity_checkout"
     tools:context="com.ellekay.lucie.fashionhouse.Checkout">
 
+
 </RelativeLayout>
