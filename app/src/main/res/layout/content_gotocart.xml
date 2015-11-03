@@ -10,4 +10,11 @@
     tools:showIn="@layout/activity_gotocart"
     tools:context="com.ellekay.lucie.fashionhouse.Gotocart">
 
+
+    <com.andtinder.view.CardContainer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
 </RelativeLayout>
