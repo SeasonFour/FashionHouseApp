@@ -25,10 +25,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
     compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
-<<<<<<< HEAD
     compile 'com.alexzh:circleimageview:1.1.1@aar'
-=======
     compile 'com.google.android.gms:play-services:6.1.71'
     compile 'com.github.kikoso:SwipeableCards:1.1-RELEASE@aar'
->>>>>>> cb7b87e6664c0c3d1a98b2156bc1445097f46b3b
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+
 }

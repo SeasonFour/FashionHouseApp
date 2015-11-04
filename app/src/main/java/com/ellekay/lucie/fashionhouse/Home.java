@@ -70,7 +70,7 @@ public class Home extends AppCompatActivity {
         rlIcon4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i4 = new Intent(Home.this, Gotocart.class);
+                Intent i4 = new Intent(Home.this, MakeUp.class);
                 startActivity(i4);
             }
         });

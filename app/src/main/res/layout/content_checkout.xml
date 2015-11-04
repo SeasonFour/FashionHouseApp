@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_checkout"
     tools:context="com.ellekay.lucie.fashionhouse.Checkout">
 
-<<<<<<< HEAD
+
     <com.alexzh.circleimageview.CircleImageView
         android:id="@+id/imageViewShoes"
         android:layout_width="120dp"
@@ -94,7 +94,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="33dp" />
-=======
->>>>>>> cb7b87e6664c0c3d1a98b2156bc1445097f46b3b
+
 
 </RelativeLayout>

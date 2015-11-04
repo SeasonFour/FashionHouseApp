@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ellekay.lucie.fashionhouse">
+    package="com.ellekay.lucie.fashionhouse" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/AppTheme"
-        tools:replace = "android:icon">
-=======
-        tools:replace="android:icon"
-        android:theme="@style/AppTheme" >
->>>>>>> cb7b87e6664c0c3d1a98b2156bc1445097f46b3b
+        tools:replace="android:icon" >
         <activity
             android:name=".Home"
             android:label="@string/app_name"
@@ -44,6 +39,26 @@
             android:name=".help"
             android:label="@string/title_activity_help"
             android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TabFragment1"
+            android:label="@string/title_activity_tabfragment1"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TabFragment2"
+            android:label="@string/title_activity_tabfragment2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TabFragment3"
+            android:label="@string/title_activity_tabfragment3"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>-->
+        <activity
+            android:name=".MakeUp"
+            android:label="@string/title_activity_make_up"
+            android:theme="@style/AppTheme" >
         </activity>
     </application>
 
