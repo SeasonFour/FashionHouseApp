@@ -65,7 +65,7 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
 
 
         //creating the circular button
-   /*     final com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton mymenu =
+        final com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton mymenu =
                 new com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton.Builder(this)
                 .build();
 
@@ -117,7 +117,7 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
                 Intent i4 = new Intent(Home.this, Gotocart.class);
                 startActivity(i4);
             }
-        });*/
+        });
 
     }
 
@@ -136,6 +136,7 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Toast.makeText(this, "Item clicked: " +position, Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -173,14 +174,13 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
 
     private ArrayList<String> generateData(){
         ArrayList<String> listData = new ArrayList<String>();
-        listData.add("http://i62.tinypic.com/2iitkhx.jpg");
-        listData.add("http://i61.tinypic.com/w0omeb.jpg");
-        listData.add("http://i60.tinypic.com/w9iu1d.jpg");
-        listData.add("http://i60.tinypic.com/iw6kh2.jpg");
-        listData.add("http://i57.tinypic.com/ru08c8.jpg");
-        listData.add("http://i60.tinypic.com/k12r10.jpg");
-        listData.add("http://i58.tinypic.com/2e3daug.jpg");
-        listData.add("http://i59.tinypic.com/2igznfr.jpg");
+        listData.add("http://gloimg.sammydress.com/S/2015/201509/source-img/1442525830059-P-3136085.jpeg");//dress
+        listData.add("http://www.wholesale7.net/images/201204/goods_img/28941_P_1335321411963.jpg"); //shoes
+        listData.add("https://s-media-cache-ak0.pinimg.com/736x/5e/19/1c/5e191cdc55ed358a4c8b44f862efcc68.jpg"); //bag
+        listData.add("http://s7ondemand4.scene7.com/is/image/Signet/9649018?$detail745$"); //jewellery
+        listData.add("http://www.womentip.com/wp-content/uploads/2014/12/Makeup-Kits.jpeg");//makeup
+        listData.add("http://d236bkdxj385sg.cloudfront.net/wp-content/uploads/2011/03/afroheadband.jpg");//hair
+        Log.d(TAG,"SIZE"+listData.size());
         return listData;
     }
 
