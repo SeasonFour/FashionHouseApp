@@ -55,7 +55,6 @@
             android:label="@string/title_activity_tabfragment3"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-
         <activity
             android:name=".MakeUp"
             android:label="@string/title_activity_make_up"
@@ -83,10 +82,11 @@
             android:label="@string/title_activity_intro4"
             android:theme="@style/AppTheme" >
         </activity>
-
         <activity
             android:name=".SampleSlide"
             android:theme="@style/AppTheme" >
+        </activity>
+        <activity android:name=".Splash" >
         </activity>
     </application>
 
