@@ -11,4 +11,8 @@
     <string name="title_activity_tabfragment2">Tabfragment2</string>
     <string name="title_activity_tabfragment3">Tabfragment3</string>
     <string name="title_activity_make_up">MakeUp</string>
+    <string name="title_activity_intro">intro</string>
+    <string name="title_activity_intro2">intro2</string>
+    <string name="title_activity_intro3">intro3</string>
+    <string name="title_activity_intro4">intro4</string>
 </resources>

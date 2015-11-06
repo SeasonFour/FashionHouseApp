@@ -30,5 +30,6 @@ dependencies {
     compile 'com.github.kikoso:SwipeableCards:1.1-RELEASE@aar'
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
+    compile 'com.github.paolorotolo:appintro:3.2.0'
 
 }
