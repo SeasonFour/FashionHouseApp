@@ -5,6 +5,7 @@
     <string name="title_activity_gotocart">Gotocart</string>
     <string name="title_activity_contact">Contact</string>
     <string name="title_activity_help">help</string>
+<<<<<<< HEAD
     <string name="title_activity_tabactivity">tabactivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_tabfragment1">Tabfragment1</string>
@@ -15,4 +16,8 @@
     <string name="title_activity_intro2">intro2</string>
     <string name="title_activity_intro3">intro3</string>
     <string name="title_activity_intro4">intro4</string>
+=======
+    <string name="title_activity_make_up">MakeUp</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+>>>>>>> 5b799b3a2d44879ae16c17e0c26159f3e385f9d0
 </resources>

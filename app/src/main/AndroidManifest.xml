@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ellekay.lucie.fashionhouse" >
+<<<<<<< HEAD
+=======
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+>>>>>>> 5b799b3a2d44879ae16c17e0c26159f3e385f9d0
 
     <application
         android:allowBackup="true"
@@ -19,6 +25,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <activity
@@ -57,6 +64,7 @@
             android:label="@string/title_activity_help"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".TabFragment1"
             android:label="@string/title_activity_tabfragment1"
@@ -80,6 +88,11 @@
 
 
 
+=======
+        <activity android:name=".Category" >
+
+        </activity>
+>>>>>>> 5b799b3a2d44879ae16c17e0c26159f3e385f9d0
     </application>
 
 </manifest>
