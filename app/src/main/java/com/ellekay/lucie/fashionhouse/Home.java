@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 //import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
@@ -34,13 +35,12 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);*/
+
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
         ImageLoader imageLoader = ImageLoader.getInstance();
         imageLoader.init(ImageLoaderConfiguration.createDefault(this));
-
-
 
 
         setTitle("Fashion House b-Home");
@@ -75,11 +75,13 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
         ImageView rlIcon2 = new ImageView(this);
         ImageView rlIcon3 = new ImageView(this);
         ImageView rlIcon4 = new ImageView(this);
+        ImageView rlIcon5 = new ImageView(this);
         //setting icons for the buttons
         rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.help));
         rlIcon2.setImageDrawable(getResources().getDrawable(R.drawable.business));
         rlIcon3.setImageDrawable(getResources().getDrawable(R.drawable.cartfull));
         rlIcon4.setImageDrawable(getResources().getDrawable(R.drawable.car));
+        rlIcon5.setImageDrawable(getResources().getDrawable(R.drawable.car));
 
         //creating the floating action menu subButtos being created dynamically
         final FloatingActionMenu myFloatingMenu = new FloatingActionMenu.Builder(this)
@@ -87,6 +89,7 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
                 .addSubActionView(rLSubBuilder.setContentView(rlIcon2).build())
                 .addSubActionView(rLSubBuilder.setContentView(rlIcon3).build())
                 .addSubActionView(rLSubBuilder.setContentView(rlIcon4).build())
+                .addSubActionView(rLSubBuilder.setContentView(rlIcon5).build())
                 .attachTo(mymenu)
                 .build();
 
@@ -119,13 +122,15 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
             }
         });
 
-    }
+        rlIcon4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i5 = new Intent(Home.this, Category.class);
+                startActivity(i5);
+            }
+        });
 
-    /*@Override
-    protected void onSaveInstanceState(final Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putStringArrayList(SAVED_DATA_KEY, myData);
-    }*/
+    }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {

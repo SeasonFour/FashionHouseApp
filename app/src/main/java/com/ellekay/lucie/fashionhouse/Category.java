@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,24 +20,28 @@ public class Category extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category);
 
-        RecyclerView recycler = (RecyclerView) findViewById(R.id.home_recycler);
-        recycler.setHasFixedSize(true);
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        imageLoader.init(ImageLoaderConfiguration.createDefault(this));
 
-        glmanager = new StaggeredGridLayoutManager(3, 1);
-        recycler.setLayoutManager(glmanager);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.home_recycler);
+        recyclerView.setHasFixedSize(true);
 
-        List<CategoryClass> gList = getData();
-        CategoryAdapter cAdapter = new CategoryAdapter(Category.this,gList);
-        recycler.setAdapter(cAdapter);
+        glmanager = new StaggeredGridLayoutManager(2, 1);
+        recyclerView.setLayoutManager(glmanager);
+
+        List<CategoryClass> gList = getDataItem();
+
+        CategoryAdapter cAdapter = new CategoryAdapter(this,gList);
+        recyclerView.setAdapter(cAdapter);
     }
 
-    private List<CategoryClass> getData(){
+    private List<CategoryClass> getDataItem(){
         List<CategoryClass> categoryItem = new ArrayList<CategoryClass>();
-        categoryItem.add(new CategoryClass("Dresses", R.drawable.dresses));
-        categoryItem.add(new CategoryClass("Dresses", R.drawable.dresses));
-        categoryItem.add(new CategoryClass("Dresses", R.drawable.dresses));
-        categoryItem.add(new CategoryClass("Dresses", R.drawable.dresses));
-        categoryItem.add(new CategoryClass("Dresses", R.drawable.dresses));
+        categoryItem.add(new CategoryClass("Dresses", R.drawable.dressess));
+        categoryItem.add(new CategoryClass("Jewellery", R.drawable.goldd));
+        categoryItem.add(new CategoryClass("Bags", R.drawable.bagg));
+        categoryItem.add(new CategoryClass("Make up", R.drawable.makeupp));
+        categoryItem.add(new CategoryClass("Shoes", R.drawable.shoess));
         return categoryItem;
 
     }
