@@ -76,12 +76,16 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
         ImageView rlIcon3 = new ImageView(this);
         ImageView rlIcon4 = new ImageView(this);
         ImageView rlIcon5 = new ImageView(this);
+        ImageView rlIcon6 = new ImageView(this);
+
         //setting icons for the buttons
         rlIcon1.setImageDrawable(getResources().getDrawable(R.drawable.help));
         rlIcon2.setImageDrawable(getResources().getDrawable(R.drawable.business));
         rlIcon3.setImageDrawable(getResources().getDrawable(R.drawable.cartfull));
         rlIcon4.setImageDrawable(getResources().getDrawable(R.drawable.car));
         rlIcon5.setImageDrawable(getResources().getDrawable(R.drawable.car));
+        rlIcon6.setImageDrawable(getResources().getDrawable(R.drawable.car));
+
 
         //creating the floating action menu subButtos being created dynamically
         final FloatingActionMenu myFloatingMenu = new FloatingActionMenu.Builder(this)
@@ -90,6 +94,8 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
                 .addSubActionView(rLSubBuilder.setContentView(rlIcon3).build())
                 .addSubActionView(rLSubBuilder.setContentView(rlIcon4).build())
                 .addSubActionView(rLSubBuilder.setContentView(rlIcon5).build())
+                .addSubActionView(rLSubBuilder.setContentView(rlIcon6).build())
+
                 .attachTo(mymenu)
                 .build();
 
@@ -122,10 +128,17 @@ public class Home extends AppCompatActivity implements AbsListView.OnScrollListe
             }
         });
 
-        rlIcon4.setOnClickListener(new View.OnClickListener() {
+        rlIcon5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i5 = new Intent(Home.this, Category.class);
+                startActivity(i5);
+            }
+        });
+        rlIcon6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i5 = new Intent(Home.this, SignUp.class);
                 startActivity(i5);
             }
         });
