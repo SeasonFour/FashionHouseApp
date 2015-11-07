@@ -17,7 +17,7 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
 
         <activity
-            android:name=".Home"
+            android:name=".Splash"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -26,6 +26,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Appintro"
+            android:theme="@style/AppTheme" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme" >
+        </activity>
+
         <activity
             android:name=".Checkout"
             android:label="@string/title_activity_checkout"
@@ -46,6 +63,31 @@
             android:label="@string/title_activity_help"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+
+        <activity
+            android:name=".TabFragment1"
+            android:label="@string/title_activity_tabfragment1"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TabFragment2"
+            android:label="@string/title_activity_tabfragment2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TabFragment3"
+            android:label="@string/title_activity_tabfragment3"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MakeUp"
+            android:label="@string/title_activity_make_up"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+
+
+
         <activity android:name=".Category" >
         </activity>
         <activity android:name=".SignUp"
@@ -53,6 +95,7 @@
                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:allowBackup="true">
         </activity>
+
     </application>
 
 </manifest>
