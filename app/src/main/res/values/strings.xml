@@ -19,4 +19,8 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
     <string name="facebook_app_id">167450600273338</string>
+    <string name="email">Enter email address</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="signupwithfb">Sign up with Facebook</string>
 </resources>
